@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="網頁, 前端, 黃立寧, 設計, UI, tw, Li-Ning, Website, HTML, CSS, Javascript, JQuery">
+    <title>Li-Ning Huang's Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar desktop_navbar"><a class="navbar_logo" href="#myheader">LN</a>
+      <div class="navbar_list"><a class="listItem" href="#intro_section">關於我</a><a class="listItem" href="#skill_section">技能</a><a class="listItem" href="#experience_section">經驗</a><a class="listItem" href="#works_section">作品集</a></div>
+    </div>
+    <div class="navbar mobile_navbar"><a class="navbar_logo" href="#myheader">LN</a>
+      <div class="hamburger"><span id="nottop"></span></div>
+      <ul style="display: none">
+        <li><a class="listItem" href="#intro_section">關於我</a></li>
+        <li><a class="listItem" href="#skill_section">技能</a></li>
+        <li><a class="listItem" href="#experience_section">經驗 </a></li>
+        <li><a class="listItem" href="#works_section">作品集</a></li>
+      </ul>
+    </div>
+    <div id="myheader">
+      <div id="name">
+        <h1>Li-Ning Huang</h1>
+        <hr>
+      </div>
+      <div id="job_title">
+        <p>網頁前端工程 | 平面設計 | UI/UX設計</p>
+      </div>
+      <div class="link_wrap"><a href="https://github.com/huang798" target="_blank"><i class="fab fa-github-square" id="github"></i></a><a href="#"><i class="fab fa-medium" id="medium"></i></a></div>
+      <div id="mouse_icon">
+        <div id="wheel"></div>
+      </div>
+    </div>
+    <div id="intro_section">
+      <div class="intro_left">
+        <div class="intro_photo"></div>
+        <div class="dialog" id="dialog1"></div>
+        <div class="dialog" id="dialog2"></div>
+      </div>
+      <div class="intro_text">
+        <h1>關於我</h1>
+        <p>畢業於台灣高中，隨後進入美國普渡大學電腦圖像工程系就讀。在校期間涉獵<span> 網頁前端開發</span>、<span>UI/UX設計</span>、<span>平面設計</span>等等面向，其中對於設計領域和網站開發有著熱枕。</p>
+        <p>大二時在校內報社The Exponent和TEDxPurdueU擔任平面設計師，大四時則擔當大學內的教育學系的平面設計實習生，幫忙製作宣傳海報、設計相關部門的LOGO等等。大四的畢業製作與Purdue Conference合作，小組替他們製作了可在智慧型手機上操作的購票網站。</p><br>
+        <p>踏入網頁開發的領域後，透過部分學校課程和線上課程的眾多資源，自主學習了前端開發的各種工具，包括基本的HTML、CSS、JavaScript，和好用的JQuery、Bootstrap、Git/GitHub等等。</p><br>
+        <p>現在的目標是以<span>網頁前端工程師</span>的身分加入網頁架設團隊，與其他人一同打造美觀而友善使用者的網站！</p>
+      </div>
+    </div>
+    <div id="skill_section">
+      <div class="left_wrap">
+        <div class="left_wrap1">
+          <p class="note_title"> <span>h1 &nbsp;</span>核心技能</p>
+          <p><span>&nbsp; &nbsp; &nbsp; p &nbsp;</span>SASS + PostCSS 規劃響應式網頁板型</p>
+          <p><span>&nbsp; &nbsp; &nbsp; p &nbsp;</span>JavaScript/JQuery 製作動畫效果</p>
+          <p><span>&nbsp; &nbsp; &nbsp; p &nbsp;</span>AJAX資料串接</p>
+          <p><span>&nbsp; &nbsp; &nbsp; p &nbsp;</span>介接API</p>
+          <p><span>&nbsp; &nbsp; &nbsp; p &nbsp;</span>熟悉CSS框架Bootstrap</p>
+          <p><span>&nbsp; &nbsp; &nbsp; p &nbsp;</span>會使用JavaScript框架Vue.js</p>
+        </div>
+        <div class="left_wrap2">
+          <p class="note_title"><span>h1 &nbsp; &nbsp;</span>其他重點技能</p>
+          <p><span>&nbsp; &nbsp; &nbsp; p &nbsp;</span>Gulp自動化流程</p>
+          <p><span>&nbsp; &nbsp; &nbsp; p &nbsp;</span>Git/GitHub團隊協作</p>
+          <p><span>&nbsp; &nbsp; &nbsp; p &nbsp;</span>習慣Pug(Jade)、SASS等模板引擎</p>
+        </div>
+      </div>
+      <div class="right_wrap"><i class="fas fa-laptop-code"></i>
+        <h1>&lt;技能/&gt;</h1>
+      </div>
+    </div>
+    <div id="experience_section">
+      <div class="left_wrap"><i class="fas fa-envelope-open-text"></i>
+        <h1>&lt;經驗/&gt;</h1>
+      </div>
+      <div class="right_wrap">
+        <div class="exp" id="exp1">
+          <div class="date" id="date1">8/2016 - 1/2017</div>
+          <p class="title">TEDxPurdueU校內組織</p>
+          <p class="text">在TEDxPurdueU擔任平面設計師。通常的工作內容包含參與定期會議幫忙發想市場銷售的點子，並根據邀請的講者的演講內容製作相關的宣傳海報、組織成員的制服T恤等。</p>
+        </div>
+        <div class="exp" id="exp2">
+          <div class="date" id="date2">10/2018 - 5/2019</div>
+          <p class="title">Purdue Education Department</p>
+          <p class="text">在普渡大學的教育學系擔任平面設計實習生，負責設計海報、LOGO、傳單的模板等等。也參與行銷組的固定會議，學習、了解關於行銷的手法與技巧。</p>
+        </div>
+        <div class="exp" id="exp3">
+          <div class="date" id="date3">1/2019 - 5/2019</div>
+          <p class="title">Purdue Conference</p>
+          <p class="text">畢業製作和Purdue Conference合作，替他們設計、製作一款使用者友善且能夠全程在手機上進行操作的售票網站。組別製作了包括設計與開發前端的核心內容，而我主要負責用作門票的QR Code的自動生成、嵌入E-mail、發送等內容。</p>
+        </div>
+      </div>
+    </div>
+    <div id="works_section">
+      <h1>作品集</h1>
+      <hr>
+      <div class="direction-reveal direction-reveal--3-grid-flexbox direction-reveal--demo-swing"><a class="direction-reveal__card" href="https://huang798.github.io/sweetShop/" target="_blank"><img class="img-fluid" src="images/sweetshop.jpg" alt="Image">
+          <div class="direction-reveal__overlay direction-reveal__anim--in">
+            <h3 class="direction-reveal__title">甜點電商</h3>
+            <p class="direction-reveal__text">Description</p>
+          </div></a><a class="direction-reveal__card" href="https://codepen.io/LiNing_Huang/pen/QBOwxb?editors=1100" target="_blank"><img class="img-fluid" src="images/Vue_piano.jpg" alt="Image">
+          <div class="direction-reveal__overlay direction-reveal__anim--in">
+            <h3 class="direction-reveal__title">Vue鋼琴</h3>
+            <p class="direction-reveal__text">Description</p>
+          </div></a><a class="direction-reveal__card" href="https://huang798.github.io/KaohsiungTravelPublic/" target="_blank"><img class="img-fluid" src="images/1553645756423.jpg" alt="Image">
+          <div class="direction-reveal__overlay direction-reveal__anim--in">
+            <h3 class="direction-reveal__title">高雄旅遊網</h3>
+            <p class="direction-reveal__text">Description</p>
+          </div></a><a class="direction-reveal__card" href="" target="_blank"><img class="img-fluid" src="images/mountain-3.jpg" alt="Image">
+          <div class="direction-reveal__overlay direction-reveal__anim--in">
+            <h3 class="direction-reveal__title">Title</h3>
+            <p class="direction-reveal__text">Description</p>
+          </div></a><a class="direction-reveal__card" href="#" target="_blank"><img class="img-fluid" src="images/sweetshop.jpg" alt="Image">
+          <div class="direction-reveal__overlay direction-reveal__anim--in">
+            <h3 class="direction-reveal__title">甜點電商</h3>
+            <p class="direction-reveal__text">Description</p>
+          </div></a><a class="direction-reveal__card" href="" target="_blank"><img class="img-fluid" src="images/mountain-2.jpg" alt="Image">
+          <div class="direction-reveal__overlay direction-reveal__anim--in">
+            <h3 class="direction-reveal__title">Title</h3>
+            <p class="direction-reveal__text">Description</p>
+          </div></a><a class="direction-reveal__card" href="" target="_blank"><img class="img-fluid" src="images/mountain-3.jpg" alt="Image">
+          <div class="direction-reveal__overlay direction-reveal__anim--in">
+            <h3 class="direction-reveal__title">Title</h3>
+            <p class="direction-reveal__text">Description</p>
+          </div></a><a class="direction-reveal__card" href="" target="_blank"><img class="img-fluid" src="images/mountain-3.jpg" alt="Image">
+          <div class="direction-reveal__overlay direction-reveal__anim--in">
+            <h3 class="direction-reveal__title">Title</h3>
+            <p class="direction-reveal__text">Description</p>
+          </div></a></div>
+    </div>
+    <div id="contact_section">
+      <div class="photo"></div>
+      <hr>
+      <div id="email"><i class="far fa-envelope"></i>
+        <p>huangln1996@gmail.com</p>
+      </div>
+      <div id="phone"><i class="fas fa-phone"></i>
+        <p>626-734-0816</p>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </body>
+</html>
