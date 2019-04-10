@@ -87,19 +87,31 @@ Math.easeInOutQuad = function (t, b, c, d) {
 function scrolltoShow(e){
   event.preventDefault();
   var click_item = e.srcElement.hash;
+
+  console.log(e.srcElement.hash);
+
   var offset;
-  if (click_item == "#myheader")
+  if (click_item == "#myheader"){
     offset = $('#myheader').offset().top;
-  if (click_item == "#intro_section")
+    scrollTo(document.documentElement, offset, 1000);
+  }
+  else if (click_item == "#intro_section"){
     offset = $('#intro_section').offset().top;
-  if (click_item == "#skill_section")
+    scrollTo(document.documentElement, offset, 1000);
+  }
+  else if (click_item == "#skill_section"){
     offset = $('#skill_section').offset().top;
-  if (click_item == "#experience_section")
+    scrollTo(document.documentElement, offset, 1000);
+  }
+  else if (click_item == "#experience_section"){
     offset = $('#experience_section').offset().top;
-  if (click_item == "#works_section")
+    scrollTo(document.documentElement, offset, 1000);
+  }
+  else if (click_item == "#works_section"){
     offset = $('#works_section').offset().top;  
+    scrollTo(document.documentElement, offset, 1000);
+  }
  
-  scrollTo(document.documentElement, offset, 1000);
 };
 
 $('.navbar').click(scrolltoShow);
@@ -117,7 +129,7 @@ initAutoType_dialog2();
 
 
 function initAutoType_dialog1(){
-  var types = ["嗨","我叫黃立寧","歡迎來到我的個人網站"];
+  var types = ["Hi","I am Li-Ning Huang","Welcome to my website!"];
   var words = $("#dialog1");
 
   //停止自動打字
@@ -126,7 +138,7 @@ function initAutoType_dialog1(){
   var index = 0;
   var tempWords = "";
   var isNext = false;
-  var time = 300;
+  var time = 100;
 
   var startType = setInterval(function(){
     if(stopType){
@@ -168,7 +180,7 @@ function initAutoType_dialog1(){
 
 
 function initAutoType_dialog2(){
-  var types = ["我喜歡用JS做點小動畫","用CSS呈現漂亮的版面", "嘗試各種有趣的技巧"];
+  var types = ["I love CSS & JS animations","love to dig into CSS's rules", "love to try new technique"];
   var words = $("#dialog2");
 
   //停止自動打字
@@ -177,7 +189,7 @@ function initAutoType_dialog2(){
   var index = 0;
   var tempWords = "";
   var isNext = false;
-  var time = 300;
+  var time = 100;
 
   var startType = setInterval(function(){
     if(stopType){
