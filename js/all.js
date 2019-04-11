@@ -8,10 +8,19 @@ function menuHandler(e){
 };
 
 
+//顯示鼠標位置
+$(document).mousemove(function(e){
+  // console.log("X: "+e.pageX+", Y: "+ e.pageY);
+  // $("span").text("X: " + e.pageX + ", Y: " + e.pageY);
+});
+
+
 //用來監看特定位置，點擊回饋點擊內容
-// $('.navbar').click(function(e){
-//   console.log(e);
-// });
+$('.sidenavbar').click(function(e){
+  // console.log(e.offsetX);
+  // console.log(e.offsetY);
+  // console.log(e.pageY);
+});
 
 //讓Header維持在使用者視窗高度
 var height = window.innerHeight + 'px';
@@ -27,6 +36,7 @@ window.onresize = function(){
 window.onscroll=function(){
   navbar();
   moving();
+  sidebar_change();
 };
 function navbar(){
   var top = document.documentElement.scrollTop;
@@ -50,6 +60,21 @@ function moving(){
     document.querySelector('.intro_photo').classList.remove('here');
   };
 };
+
+function sidebar_change(e){
+  // var sidenavbar = document.querySelector(".sidenavbar").pageX();
+  // console.log(sidenavbar);
+  // var intro = document.querySelector("#intro_section").pageX;
+  // console.log("這裡是sidenavbar的最下方: " + sidenavbar);
+  // console.log("這裡是introsection: " + intro);
+  // var sidenavbarH = $('.sidenavbar').css('height');
+  // console.log(sidenavbarH)
+  // console.log(e);
+  // var top = document.documentElement.scrollTop;
+  // if(top > window.innerHeight - 250){
+  //   var photo = document.querySelector('.intro_photo')
+  //   photo.classList.add('here')
+}
 
 //滑動function
 function scrollTo(element, to, duration) {
@@ -87,31 +112,19 @@ Math.easeInOutQuad = function (t, b, c, d) {
 function scrolltoShow(e){
   event.preventDefault();
   var click_item = e.srcElement.hash;
-
-  console.log(e.srcElement.hash);
-
   var offset;
-  if (click_item == "#myheader"){
+  if (click_item == "#myheader")
     offset = $('#myheader').offset().top;
-    scrollTo(document.documentElement, offset, 1000);
-  }
-  else if (click_item == "#intro_section"){
+  if (click_item == "#intro_section")
     offset = $('#intro_section').offset().top;
-    scrollTo(document.documentElement, offset, 1000);
-  }
-  else if (click_item == "#skill_section"){
+  if (click_item == "#skill_section")
     offset = $('#skill_section').offset().top;
-    scrollTo(document.documentElement, offset, 1000);
-  }
-  else if (click_item == "#experience_section"){
+  if (click_item == "#experience_section")
     offset = $('#experience_section').offset().top;
-    scrollTo(document.documentElement, offset, 1000);
-  }
-  else if (click_item == "#works_section"){
+  if (click_item == "#works_section")
     offset = $('#works_section').offset().top;  
-    scrollTo(document.documentElement, offset, 1000);
-  }
  
+  scrollTo(document.documentElement, offset, 1000);
 };
 
 $('.navbar').click(scrolltoShow);
