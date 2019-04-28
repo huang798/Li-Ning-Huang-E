@@ -347,7 +347,7 @@ a {
     width: 800px;
     padding-left: 30px;
     padding-right: 30px; }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1250px) {
       #intro_section .intro_text {
         margin-top: 180px; } }
     @media screen and (max-width: 576px) {
